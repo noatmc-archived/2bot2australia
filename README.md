@@ -1,2 +1,2 @@
 # 2bot2australia
- discord bot for 2b au, nothing useful yet lol
+### a bot for 2b2t australia :)

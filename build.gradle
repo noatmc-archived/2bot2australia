@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '6.0.0'
+}
+
+mainClassName = 'me.noat.australia.Cope'
+version '1.0'
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+    mavenCentral()
+    jcenter()
+    maven {
+        name 'jfrog-duncte123'
+        url 'https://duncte123.jfrog.io/artifactory/maven'
+    }
+}
+
+dependencies {
+    implementation("net.dv8tion:JDA:5.0.0-alpha.3")
+    implementation 'com.jagrosh:jda-utilities:3.0.5'
+    implementation 'me.duncte123:botCommons:2.3.9'
+    implementation 'com.google.code.gson:gson:2.8.9'
+}
+
+compileJava.options.encoding = 'UTF-8'
