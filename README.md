@@ -11,6 +11,6 @@
 
 ![image](https://user-images.githubusercontent.com/84829615/148334090-a0e5f13f-4a09-423d-8c38-2027afded1b7.png)
 
-### - Credits
+### Credits
 RemainingToast/ServerAPI
 - used for getting info for this bot
