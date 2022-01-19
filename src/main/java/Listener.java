@@ -11,7 +11,15 @@ public class Listener extends ListenerAdapter {
     @Override
     public void onMessageReceived(@NotNull MessageReceivedEvent event) {
         List<String> args = Arrays.asList(event.getMessage().getContentRaw().split(" "));
-        if (event.getMessage().getContentRaw().equalsIgnoreCase("+info")) {
+        if (event.getMessage().getContentRaw().equalsIgnoreCase("+help")) {
+            EmbedBuilder embedBuilder = new EmbedBuilder();
+            embedBuilder.setTitle("Help Page");
+            embedBuilder.setColor(new Color(26, 196, 9, 255));
+            embedBuilder.addField(":desktop: - Info", "Tells u info about 2b au.", false);
+            embedBuilder.addField(":computer: - Player", "Tells u info about a player playing 2b au.", false);
+            event.getChannel().sendMessageEmbeds(embedBuilder.build()).queue();
+        }
+        else if (event.getMessage().getContentRaw().equalsIgnoreCase("+info")) {
             EmbedBuilder embedBuilder = new EmbedBuilder();
             embedBuilder.setTitle("Server Info");
             try {
