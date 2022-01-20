@@ -14,3 +14,6 @@
 ### Credits
 RemainingToast/ServerAPI
 - used for getting info for this bot
+
+Perry
+- Cleaning up the code.
